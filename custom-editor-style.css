@@ -1,0 +1,19 @@
+.btn {
+  border: 1px dotted gray;
+  display: inline-block;
+  padding: 0.5em;
+  font-size: 1.3em;
+}
+
+.hr-wysiwig-divider {
+  color: #000;
+}
+
+.roboto-thin-italic-text {
+  font-style: italic;
+}
+
+.wysiwig-flex-wrapper {
+  border: 1px dotted gray;
+  padding: 0.5em;
+}

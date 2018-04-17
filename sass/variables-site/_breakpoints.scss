@@ -1,0 +1,22 @@
+$breakpoints: (
+  'mobile': 450px,
+	'x-small': 36em, // 576px
+	'small': 46.875em, // 750px
+	'medium': 59.375em, // 950px
+	'large': 75em, // 1200px
+	'x-large': 90em, // 1440px
+	'xx-large': 125em // 2000px
+);
+
+$breakpoints_vert: (
+	'small': 44em,
+	'medium': 65em
+);
+
+$outer_spacing: (
+	'small': 1.875,
+	'medium': 2.25,
+	'xlarge': 3.5
+);
+
+$max_width: 68.75em; // 1100px

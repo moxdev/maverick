@@ -1,0 +1,35 @@
+.site-info {
+
+  .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    padding: 0;
+    li {
+      margin-bottom: 0;
+      a {
+        display: block;
+        text-indent: 110%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        background-image: url(../imgs/sprite-social-media-icons.svg);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+      }
+    }
+    .fb a {
+      background-position: 0 0;
+    }
+    .tw a {
+      background-position: -40px 0;
+    }
+    .insta a {
+      background-position: -240px 0;
+    }
+  }
+}
+

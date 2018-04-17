@@ -1,0 +1,75 @@
+.home-testimonial {
+  // background-color: $color__brand-1;
+  color: #fff;
+  text-align: center;
+  position: relative;
+
+
+  .wrapper {
+    max-width: 1350px;
+    margin: 0 auto;
+
+  }
+
+  .inner-wrapper {
+    @include max-width(500px);
+  }
+
+  h2 {
+    // color: $color__brand-3;
+  }
+
+  .testimonial {
+    padding-bottom: 2em;
+  }
+
+  .testimonial-carousel {
+    color: #fff;
+    height: 100%;
+
+    .cell {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+
+      .title {
+        display: block;
+      }
+    }
+
+    // Custom Flickity Styles
+
+    /* big buttons, no circle */
+    .flickity-prev-next-button {
+      width: 13px;
+      height: 24px;
+      background: transparent;
+      overflow: hidden;
+      display: none; // display at larger size
+
+      @include respond-to(x-small) {
+        display: block;
+      }
+    }
+    .flickity-prev-next-button:hover {
+      background: transparent;
+    }
+    /* arrow color */
+    .flickity-prev-next-button .arrow {
+      fill: white;
+    }
+    .flickity-prev-next-button.no-svg {
+      color: white;
+    }
+
+    @include respond-to(x-small) {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    @include respond-to(medium) {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+}
