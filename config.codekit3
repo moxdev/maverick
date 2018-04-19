@@ -50,6 +50,99 @@
 		"oF": 1,
 		"oS": 3
 		},
+	"\/fonts\/Lato-Bold.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Bold.eot",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Lato-Bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Lato-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Bold.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Bold.woff",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Light.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Light.eot",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Lato-Light.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Lato-Light.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Light.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Light.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Light.woff",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Regular.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Regular.eot",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/fonts\/Lato-Regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/fonts\/Lato-Regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Regular.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Lato-Regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/fonts\/Lato-Regular.woff",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -890,6 +983,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/layout\/_sidebar-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/masthead\/_masthead.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/masthead\/_masthead.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

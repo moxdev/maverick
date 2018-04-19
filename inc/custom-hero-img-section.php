@@ -22,7 +22,7 @@ function maverick_custom_header_section() {
         <div class="title-wrapper">
           <div class="title-inner-wrapper">
             <div class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></div>
-            <a href="<?php echo wp_kses_post( $hero_btn_link ); ?>"><button><?php echo wp_kses_post( $hero_btn_text ); ?></button></a>
+            <a class="btn" href="<?php echo wp_kses_post( $hero_btn_link ); ?>"><?php echo wp_kses_post( $hero_btn_text ); ?></a>
           </div>
         </div>
 

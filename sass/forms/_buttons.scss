@@ -5,18 +5,53 @@ input[type="submit"] {
 	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
-	background: $color__background-button;
+	background: $color__btn-background;
 	color: rgba(0, 0, 0, .8);
 	@include font-size(0.75);
 	line-height: 1;
 	padding: .6em 1em .4em;
 
 	&:hover {
-		border-color: $color__border-button-hover;
+		border-color: $color__btn-color;
 	}
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
+}
+
+.btn {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  background: $color__btn-background;
+  color: $color__btn-color;
+  margin-top: 1em;
+  border: none;
+  border-radius: 10px;
+  @include font-size(1.1);
+  line-height: 1;
+  padding: 1em 1.5em;
+  -webkit-appearance: none;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    color: $color__btn-color;
+  }
+
+  @include respond-to(small) {
+    @include font-size(1);
+  }
+  @include respond-to(large) {
+    @include font-size(.9);
+  }
 }
