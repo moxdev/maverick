@@ -12,7 +12,6 @@ function maverick_home_page_sections() {
       <?php while( have_rows('home_custom_sections') ): the_row();
         $home_icon_section        = get_sub_field( 'home_icon_section' );
         $home_testimonial_section = get_sub_field( 'home_testimonial_section' );
-        $learn_more_video_section = get_sub_field( 'learn_more_video_section' );
 
         if ( $home_icon_section ) :
 

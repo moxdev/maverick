@@ -44,7 +44,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 	## Captions
   ## Galleries
-#Masthead
+# Masthead
+# Front Page
+# Flexible Content Sections
 # Footer
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
@@ -121,14 +123,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "media/media";
 
 /*--------------------------------------------------------------
+# Masthead
+--------------------------------------------------------------*/
+@import "masthead/masthead";
+
+/*--------------------------------------------------------------
 # Front Page
 --------------------------------------------------------------*/
 @import "front-page/front-page";
 
 /*--------------------------------------------------------------
-# Masthead
+# Flexible Content Sections
 --------------------------------------------------------------*/
-@import "masthead/masthead";
+@import "flexible-content/flexible-content";
 
 /*--------------------------------------------------------------
 # Footer

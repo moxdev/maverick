@@ -36,6 +36,24 @@ function maverick_flexble_content_sections() {
 
           <?php
 
+        elseif( get_row_layout() == 'call_to_action_section' ):
+          $cta_background_image  = get_sub_field('cta_background_image');
+          $call_to_action_content = get_sub_field('call_to_action_content'); ?>
+
+            <section class="cta-section">
+              <figure class="bkg-image">
+                <img src="<?php echo esc_url( $cta_background_image['sizes']['call-to-action-img'] ); ?>" alt="<?php echo esc_attr( $cta_background_image['alt'] ); ?>" description="<?php echo esc_attr( $cta_background_image['description'] ); ?>">
+              </figure>
+
+              <div class="cta-wrapper">
+                <div class="cta-inner-wrapper">
+                  <?php echo wp_kses_post( $call_to_action_content ); ?>
+                </div>
+              </div>
+            </section>
+
+          <?php
+
         endif;
 
       endwhile;

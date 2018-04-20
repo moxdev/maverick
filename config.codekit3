@@ -530,6 +530,34 @@
 		"oAP": "\/sass\/.sass-cache\/0583a815ad8c66c5ecfed19ca44a55a98abdefb3\/_widgets.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_call-to-action-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_call-to-action-section.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_flexible-content.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_flexible-content.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_gray-content-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_gray-content-section.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_white-content-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/171577591862b3c62b482b64df44eb8db03abf4c\/_white-content-section.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/24d4c24b522b6e942e1906b8dbbb66e7352972dc\/_front-page.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -844,6 +872,58 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/elements\/_tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/flexible-content\/_call-to-action-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/flexible-content\/_call-to-action-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/flexible-content\/_flexible-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/flexible-content\/_flexible-content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/flexible-content\/_gray-content-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/flexible-content\/_gray-content-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/flexible-content\/_white-content-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/flexible-content\/_white-content-section.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
