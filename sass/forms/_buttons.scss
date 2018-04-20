@@ -23,6 +23,8 @@ input[type="submit"] {
 
 .btn {
   display: inline-block;
+  font-family: $font__bold;
+  @include font-smooth;
   width: 200px;
   text-align: center;
   text-decoration: none;

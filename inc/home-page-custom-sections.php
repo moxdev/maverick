@@ -90,66 +90,61 @@ function maverick_home_page_sections() {
                 <img src="<?php echo esc_url( $testimonial_background_image['url'] ); ?>" alt="<?php echo esc_attr( $testimonial_background_image['alt'] ); ?>" description="<?php echo esc_attr( $testimonial_background_image['description'] ); ?>">
               </figure>
 
-              <div class="wrapper">
-                <div class="inner-wrapper">
-
+              <div class="inner-wrapper">
+                <div class="testimonial-header flex-child">
                   <h2><?php echo wp_kses_post( $testimonial_header ); ?></h2>
+                </div>
 
-                  <div class="divider">
-                    <span class="quote">"</span>
+                <?php if ($testimonial) {
+                    // WP_Query arguments
+                    $args = array(
+                      'post_type'   => array( 'testimonials' ),
+                      'post_status' => array( 'publish' ),
+                      'nopaging'    => true,
+                      'order'       => 'DESC',
+                      'orderby'     => 'date',
+                    );
+                    // The Query
+                    $testimonials = new WP_Query( $args );
+                    // The Loop
+                    if ( $testimonials->have_posts() ) { ?>
+
+                      <div class="testimonial flex-child">
+                        <div class="testimonial-carousel">
+
+                        <?php while ( $testimonials->have_posts() ) {
+                            $testimonials->the_post();
+
+                            ?>
+
+                            <div class="cell">
+                              <div class="cell-wrapper">
+                                <?php the_content(); ?>
+                              </div>
+                            </div><!-- cell -->
+
+                          <?php
+
+                        } ?>
+
+                        </div><!-- testimonial-carousel -->
+                      </div><!-- testimonial -->
+
+                    <?php
+                    }
+                    // Restore original Post Data
+                    wp_reset_postdata();
+                } ?>
+
+                <?php if ( $testimonial_button_text ) : ?>
+
+                  <div class="button-wrapper">
+                    <a class="btn" href="<?php echo wp_kses_post( $testimonial_button_url ); ?>"><?php echo wp_kses_post( $testimonial_button_text ); ?></a>
                   </div>
 
-                  <?php if ($testimonial) {
-                      // WP_Query arguments
-                      $args = array(
-                        'post_type'   => array( 'testimonials' ),
-                        'post_status' => array( 'publish' ),
-                        'nopaging'    => true,
-                        'order'       => 'DESC',
-                        'orderby'     => 'date',
-                      );
-                      // The Query
-                      $testimonials = new WP_Query( $args );
-                      // The Loop
-                      if ( $testimonials->have_posts() ) { ?>
+                <?php endif; ?>
 
-                        <div class="testimonial">
-                          <div class="testimonial-carousel">
-
-                          <?php while ( $testimonials->have_posts() ) {
-                              $testimonials->the_post();
-
-                              ?>
-
-                              <div class="cell">
-                                <div class="cell-wrapper">
-                                  <?php the_content(); ?>
-                                </div>
-                              </div><!-- cell -->
-
-                            <?php
-
-                          } ?>
-
-                          </div><!-- testimonial-carousel -->
-                        </div><!-- testimonial -->
-
-                      <?php
-                      }
-                      // Restore original Post Data
-                      wp_reset_postdata();
-                  } ?>
-
-                  <?php if ( $testimonial_button_text ) : ?>
-
-                    <div class="button-wrapper">
-                      <a class="btn" href="<?php echo wp_kses_post( $testimonial_button_url ); ?>"><?php echo wp_kses_post( $testimonial_button_text ); ?></a>
-                    </div>
-
-                  <?php endif; ?>
-
-                </div>
-              </div><!-- wrapper -->
+              </div>
             </section><!-- home-testimonial -->
 
             <?php endwhile;

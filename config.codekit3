@@ -171,6 +171,16 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/imgs\/qoute-marks.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/qoute-marks.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/imgs\/sprite-social-media-icons.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -770,6 +780,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/eb67d653f48b053200be28348cb47ca7b48ba257\/_variables-site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/efa23a57b7cd645c59cd2a7a21cad9375cbaeff9\/_masthead.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/efa23a57b7cd645c59cd2a7a21cad9375cbaeff9\/_masthead.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/f5ea389fb0d516863ef4a7c76ba1f2c19905551a\/_site.scssc": {

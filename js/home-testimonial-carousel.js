@@ -3,7 +3,7 @@ var elem = document.querySelector('.testimonial-carousel');
 var flkty = new Flickity(elem, {
   cellAlign: 'left',
   contain: true,
-  pageDots: false,
+  pageDots: true,
   setGallerySize: true,
   groupCells: true,
   autoPlay: 8000,
