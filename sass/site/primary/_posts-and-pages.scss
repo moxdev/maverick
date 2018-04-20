@@ -1,9 +1,38 @@
+#page {
+  position: relative;
+  overflow-x: hidden;
+}
+
+#primary {
+  // background-color: #fff;
+
+  article {
+    text-align: center;
+  }
+
+  @include respond-to(medium) {
+    .wrapper {
+      padding-top: 0;
+    }
+
+    article {
+      margin-top: -3rem;
+    }
+  }
+
+
+
+
+}
+
+
+
 .sticky {
 	display: block;
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
 }
 
 .updated:not(.published) {

@@ -1,4 +1,5 @@
 section.hero {
+
   .feature-img {
     height: 500px;
 
@@ -48,6 +49,22 @@ section.hero {
         padding-right: 5rem;
         text-shadow: 0 0 10px rgba(0, 0, 0, 1);
       }
+    }
+  }
+
+  @include respond-to(medium) {
+    position: relative;
+    z-index: -1;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      right: 5%;
+      height: 80px;
+      z-index: 2000;
+      background-color: #fff;
     }
   }
 }

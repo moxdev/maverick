@@ -44,6 +44,7 @@ if ( ! function_exists( 'maverick_setup' ) ) :
     add_image_size('home-feature-img', 700, 700, true);
     add_image_size('feature-img', 1800, 400, false);
     add_image_size('team-bio-img', 300, 300, true);
+    add_image_size('service-icons', 200, 87, false);
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

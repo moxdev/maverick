@@ -15,15 +15,6 @@
 ## Global Site Styles
 --------------------------------------------------------------*/
 
-#page {
-  position: relative;
-  overflow-x: hidden;
-}
-
-#primary {
-  background-color: #fff;
-}
-
 .wrapper {
   @include section-padding(2);
   @include padding-left-right;

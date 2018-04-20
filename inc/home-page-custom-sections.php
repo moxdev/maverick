@@ -44,9 +44,9 @@ function maverick_home_page_sections() {
 
                     <div class="icon-inner-wrapper">
 
-                      <img src="<?php echo esc_url( $icon['sizes'][''] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" description="<?php echo esc_attr( $icon['description'] ); ?>">
+                      <img src="<?php echo esc_url( $icon['sizes']['service-icons'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ); ?>" description="<?php echo esc_attr( $icon['description'] ); ?>">
 
-                      <?php echo wp_kses_post( $icon_title ); ?>
+                      <div class="icon-title"><?php echo wp_kses_post( $icon_title ); ?></div>
 
                     </div>
 
