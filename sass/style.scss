@@ -45,8 +45,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
   ## Galleries
 # Masthead
-# Front Page
+# Hero Section
 # Flexible Content Sections
+# Front Page
+# Featured Loads Page
 # Footer
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
@@ -128,14 +130,24 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "masthead/masthead";
 
 /*--------------------------------------------------------------
-# Front Page
+# Hero Section
 --------------------------------------------------------------*/
-@import "front-page/front-page";
+@import "hero-section/hero-section";
 
 /*--------------------------------------------------------------
 # Flexible Content Sections
 --------------------------------------------------------------*/
 @import "flexible-content/flexible-content";
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+@import "front-page/front-page";
+
+/*--------------------------------------------------------------
+# Featured Loads Page
+--------------------------------------------------------------*/
+@import "featured-loads/featured-loads";
 
 /*--------------------------------------------------------------
 # Footer

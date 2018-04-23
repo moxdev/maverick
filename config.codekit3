@@ -181,6 +181,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/imgs\/sprite-social-media-icons.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/imgs\/sprite-social-media-icons.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/inc\/custom-header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -200,6 +210,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/inc\/featured-load-section.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/featured-load-section.php",
 		"oF": 0
 		},
 	"\/inc\/flexible-content-sections.php": {
@@ -443,6 +460,13 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
+	"\/page-featured-load.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-featured-load.php",
+		"oF": 0
+		},
 	"\/page-leadership.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -667,6 +691,13 @@
 		"oAP": "\/sass\/.sass-cache\/a596e196daad053ffbfca73375dfe4cea4e070db\/_typography.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/bd293a7267cc9af05b7ebbaf4288e8089ca17ffd\/_hero-section.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/bd293a7267cc9af05b7ebbaf4288e8089ca17ffd\/_hero-section.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/bfc4216b6e2c4fea0bfa3d1dd0606328b49046f2\/_accessibility.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -756,6 +787,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/db5b3b64f0fc3b9a163c572245394e89b014cf7d\/_navigation.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/e267da8ecbf070e4139ac777132928a2fa0262a4\/_featured-loads.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/e267da8ecbf070e4139ac777132928a2fa0262a4\/_featured-loads.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/eb67d653f48b053200be28348cb47ca7b48ba257\/_breakpoints.scssc": {
@@ -862,6 +900,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/elements\/_tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/featured-loads\/_featured-loads.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/featured-loads\/_featured-loads.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1031,6 +1082,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/front-page\/_testimonial.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/hero-section\/_hero-section.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/hero-section\/_hero-section.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

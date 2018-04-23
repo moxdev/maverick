@@ -8,7 +8,7 @@
 function maverick_custom_header_section() {
   if( is_front_page() && has_post_thumbnail() ) { ?>
 
-    <section class="hero">
+    <section class="home-hero">
 
       <?php if ( function_exists( 'get_field' ) ) :
         $hero_title        = get_field( 'home_hero_title' );

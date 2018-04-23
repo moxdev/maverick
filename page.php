@@ -40,5 +40,5 @@ get_header();
   <?php if( function_exists( 'maverick_flexble_content_sections' ) ) : maverick_flexble_content_sections(); endif; ?>
 
 <?php
-get_sidebar();
+
 get_footer();

@@ -1,0 +1,69 @@
+section.hero {
+  position: relative;
+
+  .feature-img {
+    height: 250px;
+    position: relative;
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+      font-family: "object-fit: cover";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .title-wrapper {
+    background: $color__gradient;
+    font-family: $font__bold;
+    color: #fff;
+    position: absolute;
+    z-index: 2000;
+    font-size: 2em;
+    padding: .5em 1em;
+    letter-spacing: 1px;
+    top: 36%;
+    top: calc(50% - 1em);
+    left: 0;
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  @include respond-to(x-small) {
+    .title-wrapper {
+      width: 50%;
+    }
+  }
+
+  @include respond-to(medium) {
+    z-index: -1;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      right: 5%;
+      height: 80px;
+      z-index: 2000;
+      background-color: #fff;
+    }
+
+    .feature-img {
+      height: 400px;
+    }
+
+    .title-wrapper {
+      top: calc(50% - 2em);
+    }
+  }
+
+  @include respond-to(xx-large) {
+    .title-wrapper {
+      width: 40%;
+    }
+  }
+}
