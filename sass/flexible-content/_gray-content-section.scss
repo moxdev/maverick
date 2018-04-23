@@ -1,3 +1,11 @@
 section.gray-section {
   background-color: $color__background-body-alt;
+
+  h2 {
+    color: $color__brand-1;
+  }
+
+  h3 {
+    margin: 0;
+  }
 }

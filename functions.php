@@ -289,9 +289,9 @@ function my_mce_before_init_insert_formats( $init_array ) {
         'classes' => 'read-more-link' // CSS class to add
       ),
       array(
-        'title' => 'Flex Wrapper div', // Title to show in dropdown
-        'block' => 'div', // Element to add class to
-        'classes' => 'wysiwig-flex-wrapper' // CSS class to add
+        'title' => 'Blue Text', // Title to show in dropdown
+        'block' => 'p', // Element to add class to
+        'classes' => 'blue-text' // CSS class to add
       )
     );
     $init_array['style_formats'] = json_encode( $style_formats );

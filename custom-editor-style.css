@@ -13,7 +13,6 @@
   font-style: italic;
 }
 
-.wysiwig-flex-wrapper {
-  border: 1px dotted gray;
-  padding: 0.5em;
+.blue-text {
+  color: blue;
 }
