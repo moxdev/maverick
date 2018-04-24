@@ -408,7 +408,7 @@
 		},
 	"\/js\/services-lightbox.js": {
 		"ft": 64,
-		"ma": 0,
+		"ma": 1,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/services-lightbox.min.js",

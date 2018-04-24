@@ -150,6 +150,12 @@ function maverick_scripts() {
     wp_enqueue_script('read-more-dropdown', get_template_directory_uri() . '/js/min/click-to-display-content.min.js', NULL, NULL, TRUE);
   }
 
+  if( is_page_template( 'page-services.php' ) ) {
+    wp_enqueue_script('glightbox', get_template_directory_uri() . '/js/min/glightbox.min.js', NULL, NULL, TRUE);
+
+    wp_enqueue_script('services-lightbox', get_template_directory_uri() . '/js/min/services-lightbox.min.js', array('glightbox'), NULL, TRUE);
+  }
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -366,3 +372,8 @@ require get_template_directory() . '/inc/leadership-section.php';
  * Displays Featured Load Page Sections.
  */
 require get_template_directory() . '/inc/featured-load-section.php';
+
+/**
+ * Displays Services Page Sections.
+ */
+require get_template_directory() . '/inc/services-section.php';
