@@ -247,6 +247,13 @@
 		"oAP": "\/inc\/leadership-section.php",
 		"oF": 0
 		},
+	"\/inc\/services-section.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/inc\/services-section.php",
+		"oF": 0
+		},
 	"\/inc\/template-functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -474,6 +481,13 @@
 		"oAP": "\/page-leadership.php",
 		"oF": 0
 		},
+	"\/page-services.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page-services.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -626,6 +640,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/3157e4e1c7a1814d6b1b02327067f7360dd576ef\/_media.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/4473540f2a88a19113247448b85060644feb77d5\/_page-leadership.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/4473540f2a88a19113247448b85060644feb77d5\/_page-leadership.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/94b67bf6dda13713fb0c27b06fe901c9b8269ee1\/_buttons.scssc": {
@@ -836,6 +857,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/eb67d653f48b053200be28348cb47ca7b48ba257\/_variables-site.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/ec0120d490cfe37abdca2a5f8f96efdc1cb787b6\/_page-services.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/ec0120d490cfe37abdca2a5f8f96efdc1cb787b6\/_page-services.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/efa23a57b7cd645c59cd2a7a21cad9375cbaeff9\/_masthead.scssc": {
@@ -1316,6 +1344,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-leadership\/_page-leadership.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-leadership\/_page-leadership.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-services\/_page-services.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-services\/_page-services.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

@@ -9,7 +9,7 @@ function maverick_leadership_page_sections() {
 	if ( function_exists( 'get_field' ) ) {
     if( have_rows('leadership') ): ?>
 
-      <section class="our-team">
+      <section class="leadership">
 
           <?php while( have_rows('leadership') ): the_row();
 

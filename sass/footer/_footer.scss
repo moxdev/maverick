@@ -1,6 +1,7 @@
 #colophon {
   @include padding-left-right;
   font-family: $font__reg;
+  border-top: 1px solid $color__background-body-alt;
 
   .site-info {
     text-align: center;
