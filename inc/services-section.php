@@ -12,53 +12,55 @@ function maverick_services_section() {
      <section class="services">
        <div class="wrapper">
 
-         <ul class="box-container">
+         <ul class="services-listing">
 
          <?php while( have_rows('services') ): the_row();
 
-           $thumb_img           = get_sub_field('thumbnail_img');
-           $lightbox_img        = get_sub_field('lightbox_img');
-           $service_title       = get_sub_field('service_title');
-           $service_content     = get_sub_field('service_content');
-           $service_description = get_sub_field('service_description');
-
+           $services_image                = get_sub_field('services_image');
+           $service_title                 = get_sub_field('service_title');
+           $service_read_more_description = get_sub_field('service_read_more_description');
+           $service_full_description      = get_sub_field('service_full_description');
+           $service_button_url            = get_field('service_button_url');
+           $service_button_text           = get_field('service_button_text');
            ?>
 
-           <li class="box">
+           <li>
 
-             <a href="<?php echo $lightbox_img['url']; ?>" class="glightbox">
-               <img src="<?php echo $thumb_img['url']; ?>" alt="<?php echo $thumb_img['alt']; ?>" />
-               <div class="serivce-info">
-
-               <?php if ( $service_title ): ?>
-
-                <h2><?php echo wp_kses_post( $service_title ); ?></h2>
-
-               <?php endif; ?>
-
-               <?php if ( $service_content ): ?>
-
-                <?php echo wp_kses_post( $service_content ); ?>
-
-               <?php endif; ?>
-
+             <div>
+               <div class="icon-header-wrapper">
+                 <img class="icon" src="<?php echo esc_attr( $services_image['url'] ); ?>" alt="<?php echo esc_attr( $services_image['alt'] ); ?>">
+                 <h2><?php echo wp_kses_post( $service_title ); ?></h2>
                </div>
 
-               <div class="glightbox-desc">
-
-                 <h2><?php  echo wp_kses_post( $service_title ); ?></h2>
-
-                 <?php echo wp_kses_post( $service_description ); ?>
-
-                  <!-- <a href="/contact">Qoute</a> -->
+               <div class="services-content">
+                 <?php echo wp_kses_post( $service_read_more_description ); ?>
                </div>
-             </a>
+
+               <div class="services-desc">
+                 <?php echo wp_kses_post( $service_full_description ); ?>
+
+                 <?php if( $service_button_url ): ?>
+
+                  <a class="btn" href="<?php echo esc_url( $service_button_url ); ?>"><?php echo wp_kses_post( $service_button_text ); ?></a>
+
+                 <?php endif; ?>
+
+               </div>
+             </div>
 
            </li>
 
          <?php endwhile; ?>
 
          </ul>
+
+         <?php if( $service_button_url ): ?>
+
+          <div class="button-wrapper">
+            <a class="btn" href="<?php echo esc_url( $service_button_url ); ?>"><?php echo wp_kses_post( $service_button_text ); ?></a>
+          </div>
+
+         <?php endif; ?>
 
        </div>
      </section>

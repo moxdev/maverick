@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Services
+ * Template Name: Contact
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -32,8 +32,7 @@ get_header();
    </main><!-- #main -->
   </div><!-- #primary -->
 
-  <?php if( function_exists( 'maverick_services_section' ) ) : maverick_services_section(); endif; ?>
-  <?php if( function_exists( 'maverick_flexble_content_sections' ) ) : maverick_flexble_content_sections(); endif; ?>
+  <?php if( function_exists( 'maverick_contact_page_section' ) ) : maverick_contact_page_section(); endif; ?>
 
 <?php
 
