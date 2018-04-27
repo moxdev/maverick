@@ -1,5 +1,5 @@
 section.home-icon {
-  text-align: center;
+  // text-align: center;
   position: relative;
 
   &:after {
@@ -36,6 +36,10 @@ section.home-icon {
 
   }
 
+  h2 {
+    color: $color__text-main;
+  }
+
   .icon-wrapper {
     display: flex;
     justify-content: space-between;
@@ -44,16 +48,18 @@ section.home-icon {
 
   .icon-inner-wrapper {
     flex: 0 1 50%;
-    text-align: center;
+    // text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
     img {
       width: 105px;
+      @include test(red);
     }
 
     .icon-title {
       font-family: $font__bold;
+      // @include test(red);
     }
   }
 

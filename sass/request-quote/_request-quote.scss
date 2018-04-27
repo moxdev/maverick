@@ -1,0 +1,84 @@
+.mm4-request-form {
+  max-width: 600px;
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    font-family: $font__reg;
+    border: 1px solid $color__brand-2;
+    border-radius: 8px;
+    margin: 0 0 1.5em;
+    padding: .8rem 1rem;
+    line-height: 1;
+  }
+
+  input[type="submit"] {
+    display: inline;
+    border: none;
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    width: 80%;
+    margin-top: 1.5rem;
+  }
+
+  .g-recaptcha {
+    overflow: hidden;
+  }
+
+  .disclaimer {
+    font-family: $font__reg;
+    display: block;
+  }
+
+  @include respond-to(small) {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    label {
+      flex: 1 1 45%;
+      justify-content: space-between;
+      padding: 0 1em;
+
+    }
+
+    textarea {
+      height: 47px;
+    }
+
+    .g-recaptcha, .msg-box {
+      flex: 0 0 100%;
+      padding: 0 1em;
+    }
+
+    .msg-box > div {
+      color: red;
+
+      &:first-child {
+        margin-top: 2em;
+      }
+
+      &:last-child {
+        margin-bottom: 1em;
+      }
+    }
+
+    .btn {
+      display: block;
+      flex: 0 0 25%;
+      margin-left: 1em;
+    }
+
+    .disclaimer {
+      align-self: center;
+      margin-left: 2em;
+    }
+  }
+
+  @include respond-to(large) {
+    textarea {
+      height: 52px;
+    }
+  }
+}

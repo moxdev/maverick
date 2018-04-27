@@ -1,0 +1,105 @@
+.page-template-page-contact {
+
+  section.contact {
+    background-color: $color__background-body-alt;
+    @include section-padding(1);
+
+    .mm4-short-form {
+      max-width: 600px;
+
+      input, textarea {
+        display: block;
+        width: 100%;
+        font-family: $font__reg;
+        border: 1px solid $color__brand-2;
+        border-radius: 8px;
+        margin: 0 0 1.5em;
+        padding: .8rem 1rem;
+        line-height: 1;
+      }
+
+      input[type="submit"] {
+        display: inline;
+        border: none;
+        border-radius: 10px;
+        padding: 1em 1.5em;
+        width: 80%;
+        margin-top: 1.5rem;
+      }
+
+      .g-recaptcha {
+        overflow: hidden;
+      }
+
+      .disclaimer {
+        font-family: $font__reg;
+        display: block;
+      }
+    }
+
+    aside {
+      margin-top: 2em;
+
+      h2 {
+        margin-bottom: .5rem;
+      }
+
+      .phone {
+        margin-top: 2rem;
+
+        a {
+          text-decoration: none;
+          display: block;
+          font-family: $font__bold;
+        }
+
+        .fax {
+          margin-top: .5rem;
+          display: block;
+        }
+      }
+
+      .hours {
+        margin-top: .5rem;
+
+        p {
+          margin: 0
+        }
+      }
+    }
+
+    @include respond-to(small) {
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .form-wrapper {
+        flex: 1 1 60%;
+        padding-right: 2em;
+        max-width: 60%;
+      }
+
+      form {
+        input[type="submit"] {
+          width: 50%;
+        }
+
+        .disclaimer {
+          margin-left: 2rem;
+          display: inline;
+          font-size: .8em;
+        }
+      }
+
+      aside {
+        flex: 1 1 40%;
+        margin-top: 0;
+
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

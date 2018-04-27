@@ -96,8 +96,8 @@
 }
 
 @mixin section-padding($padding) {
-  padding-top: $padding + em;
-  padding-bottom: $padding + em;
+  padding-top: $padding + rem;
+  padding-bottom: $padding + rem;
 }
 
 // Outside margin

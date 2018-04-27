@@ -313,43 +313,6 @@ function maverick_add_editor_styles() {
 add_action( 'admin_init', 'maverick_add_editor_styles' );
 
 /**
- * ADD CUSTOM ALLOWED HTML TAGS
- */
-
-if(!function_exists('custom_add_allowed_tags')) {
-  function custom_add_allowed_tags($tags) {
-    $tags['input'] = array(
-      'type'             => array(),
-      'name'             => array(),
-      'id'               => array(),
-      'class'            => array(),
-      'data-error-label' => array(),
-    );
-    $tags['iframe'] = array(
-      'src'             => array(),
-      'height'          => array(),
-      'width'           => array(),
-      'frameborder'     => array(),
-      'allowfullscreen' => array(),
-      'role' => array(),
-      'scrolling' => array(),
-      'sandbox' => array(),
-    );
-    $tags['div'] = array(
-      'class'             => array(),
-      'data-sitekey'          => array(),
-    );
-    $tags['span'] = array(
-      'class'             => array(),
-      'data-sitekey'          => array(),
-    );
-
-    return $tags;
-  }
-  add_filter('wp_kses_allowed_html', 'custom_add_allowed_tags');
-}
-
-/**
  * Move Yoast to bottom
  */
 function yoast_to_bottom() {
