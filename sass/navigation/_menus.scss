@@ -15,7 +15,13 @@
 
 #alt-navigation {
   ul {
-  }
+		visibility: hidden;
+		
+		@media screen and (min-width: 420px) {
+			visibility: visible;
+		}
+	}
+	
   li {
     padding: .5rem;
 

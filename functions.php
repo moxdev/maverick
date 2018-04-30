@@ -53,6 +53,7 @@ if ( ! function_exists( 'maverick_setup' ) ) :
 			'main-menu' => esc_html__( 'Primary Menu', 'maverick' ),
 			'alt-menu' => esc_html__( 'Alt Menu', 'maverick' ),
 			'footer-menu' => esc_html__( 'Footer Menu', 'maverick' ),
+			'mobile-menu' => esc_html__( 'Mobile Menu', 'maverick' ),
 		) );
 
 		/*
