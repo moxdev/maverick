@@ -90,8 +90,10 @@ function maverick_home_page_sections() {
               </figure>
 
               <div class="inner-wrapper">
-                <div class="testimonial-header flex-child">
-                  <h2><?php echo wp_kses_post( $testimonial_header ); ?></h2>
+                <div class="testimonial-header">
+                  <div class="testimonial-header-wrapper">
+                    <h2><?php echo wp_kses_post( $testimonial_header ); ?></h2>
+                  </div>
                 </div>
 
                 <?php if ($testimonial) {

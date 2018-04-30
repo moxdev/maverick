@@ -1,5 +1,5 @@
 section.home-icon {
-  // text-align: center;
+  text-align: center;
   position: relative;
 
   &:after {
@@ -48,19 +48,21 @@ section.home-icon {
 
   .icon-inner-wrapper {
     flex: 0 1 50%;
-    // text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
     img {
-      width: 105px;
-      @include test(red);
+      width: 110px;
     }
 
     .icon-title {
       font-family: $font__bold;
       // @include test(red);
     }
+  }
+
+  .button-wrapper {
+    margin-bottom: 1.5rem;
   }
 
   @include respond-to(x-small) {
@@ -76,5 +78,14 @@ section.home-icon {
       flex: 0 1 33%;
     }
 
+    .icon-inner-wrapper {
+      img {
+        width: 140px;
+      }
+
+      .icon-title {
+        font-size: 1.125rem;
+      }
+    }
   }
 }
