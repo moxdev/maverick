@@ -32,11 +32,11 @@ section.home-hero {
     display: flex;
 
     .feature-img, .title-wrapper {
-      flex: 1;
+      flex: 1 1 50%;
     }
 
     .feature-img {
-      // height: 700px;
+      height: 500px;
       order: 2
     }
 
@@ -53,7 +53,7 @@ section.home-hero {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: left;
-        font-size: 2.3em;
+        // font-size: 2.3em;
         line-height: 1.1;
         padding-left: 3rem;
         padding-right: 5rem;
@@ -78,7 +78,13 @@ section.home-hero {
     }
 
     .feature-img {
-      height: 500px;
+      height: 600px;
+    }
+  }
+
+  @include respond-to(x-large) {
+    .feature-img {
+      height: 700px;
     }
   }
 }
