@@ -2,7 +2,7 @@ section.hero {
   position: relative;
 
   .feature-img {
-    height: 250px;
+    height: 220px;
     position: relative;
     z-index: -1;
 
@@ -38,7 +38,13 @@ section.hero {
     }
   }
 
-  @include respond-to(medium) {
+  @include respond-to(small) {
+    .feature-img {
+      height: 330px;
+    }
+  }
+
+  @include respond-to(large) {
     z-index: -1;
 
     &:after {
@@ -47,23 +53,27 @@ section.hero {
       bottom: 0;
       left: 5%;
       right: 5%;
-      height: 80px;
+      height: 50px;
       z-index: 2000;
       background-color: #fff;
     }
 
     .feature-img {
-      height: 400px;
+      height: 430px;
     }
 
     .title-wrapper {
-      top: calc(50% - 2em);
+      top: calc(50% - 1.7em);
     }
   }
 
   @include respond-to(xx-large) {
     .title-wrapper {
       width: 40%;
+    }
+
+    .feature-img {
+      height: 600px;
     }
   }
 }
