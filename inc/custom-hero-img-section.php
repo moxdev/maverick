@@ -6,18 +6,53 @@
  */
 
 function maverick_custom_header_section() {
-  if( is_front_page() && has_post_thumbnail() ) { ?>
+  if( is_front_page() && function_exists( 'get_field' ) ) {
 
-    <section class="home-hero">
+    $hero_title    = get_field( 'home_hero_title' );
+    $hero_btn_text = get_field( 'home_hero_button_text' );
+    $hero_btn_link = get_field( 'home_hero_button_url' );
+    $image_collage = get_field( 'image_collage' ); ?>
 
-      <?php if ( function_exists( 'get_field' ) ) :
-        $hero_title        = get_field( 'home_hero_title' );
-        $hero_btn_text     = get_field( 'home_hero_button_text' );
-        $hero_btn_link     = get_field( 'home_hero_button_url' ); ?>
+    <?php if ( $hero_title || $image_collage ) : ?> 
 
-        <figure class="feature-img">
-          <?php the_post_thumbnail('home-feature-img'); ?>
-        </figure>
+      <section class="home-hero">
+        
+      <?php if ( $image_collage ): 
+
+        while( have_rows( 'image_collage' ) ): the_row();
+
+          $left_top_image     = get_sub_field( 'left_top_image' ); 
+          $right_top_image    = get_sub_field( 'right_top_image' ); 
+          $left_bottom_image  = get_sub_field( 'left_bottom_image' ); 
+          $right_bottom_image = get_sub_field( 'right_bottom_image' ); ?> 
+
+          <div class="image-collage-wrapper">
+
+            <figure class="feature-img">
+              <img src="<?php echo esc_url( $left_top_image['url'] ); ?>" alt="<?php echo esc_attr( $left_top_image['alt'] ); ?>" description="<?php echo esc_attr( $left_top_image['description'] ); ?>">
+            </figure>
+
+            <figure class="feature-img">
+              <img src="<?php echo esc_url( $right_top_image['url'] ); ?>" alt="<?php echo esc_attr( $right_top_image['alt'] ); ?>" description="<?php echo esc_attr( $right_top_image['description'] ); ?>">
+            </figure>
+
+            <figure class="feature-img">
+              <img src="<?php echo esc_url( $left_bottom_image['url'] ); ?>" alt="<?php echo esc_attr( $left_bottom_image['alt'] ); ?>" description="<?php echo esc_attr( $left_bottom_image['description'] ); ?>">
+            </figure>
+
+            <figure class="feature-img">
+              <img src="<?php echo esc_url( $right_bottom_image['url'] ); ?>" alt="<?php echo esc_attr( $right_bottom_image['alt'] ); ?>" description="<?php echo esc_attr( $right_bottomm_image['description'] ); ?>">
+            </figure>
+
+          </div>
+          
+        <?php
+
+        endwhile; ?>
+
+      <?php endif; ?>
+
+      <?php if ( $hero_title ): ?> 
 
         <div class="title-wrapper">
           <div class="title-inner-wrapper">
@@ -25,10 +60,12 @@ function maverick_custom_header_section() {
             <a class="btn" href="<?php echo wp_kses_post( $hero_btn_link ); ?>"><?php echo wp_kses_post( $hero_btn_text ); ?></a>
           </div>
         </div>
-
+        
       <?php endif; ?>
 
-    </section>
+      </section>
+      
+    <?php endif; ?>
 
     <?php
 

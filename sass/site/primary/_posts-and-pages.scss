@@ -10,9 +10,9 @@
     text-align: center;
   }
 
-  @include respond-to(medium) {
+  @include respond-to(large) {
     .wrapper {
-      padding-top: 0;
+      // padding-top: 0;
     }
 
     article {
