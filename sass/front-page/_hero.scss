@@ -1,7 +1,13 @@
 section.home-hero {
 
+  .image-collage-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .feature-img {
-    height: 400px;
+    // height: 400px;
+    flex: 1 1 50%;
 
     img {
       display: block;
@@ -31,12 +37,12 @@ section.home-hero {
   @include respond-to(small) {
     display: flex;
 
-    .feature-img, .title-wrapper {
+    .image-collage-wrapper, .title-wrapper {
       flex: 1 1 50%;
     }
 
-    .feature-img {
-      height: 500px;
+    .image-collage-wrapper {
+      // height: 500px;
       order: 2
     }
 
@@ -78,13 +84,13 @@ section.home-hero {
     }
 
     .feature-img {
-      height: 600px;
+      // height: 600px;
     }
   }
 
   @include respond-to(x-large) {
     .feature-img {
-      height: 700px;
+      // height: 700px;
     }
   }
 }
