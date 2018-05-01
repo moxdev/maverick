@@ -6,7 +6,6 @@ section.home-hero {
   }
 
   .feature-img {
-    // height: 400px;
     flex: 1 1 50%;
 
     img {
@@ -20,7 +19,8 @@ section.home-hero {
 
   .title-wrapper {
     @include section-padding(2);
-    @include padding-left-right;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background: $color__gradient;
     color: #fff;
     font-family: $font__bold;
@@ -32,6 +32,22 @@ section.home-hero {
     .hero-title {
       padding-bottom: .5em;
     }
+
+    .btn {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  // @media only screen and (min-width: 420px) {
+  //   .title-wrapper {
+  //     // @include padding-left-right;
+  //   }
+  // }
+
+  @include respond-to(x-small) {
+    .title-wrapper {
+      font-size: 1.975rem;
+    }
   }
 
   @include respond-to(small) {
@@ -41,34 +57,63 @@ section.home-hero {
       flex: 1 1 50%;
     }
 
+    .title-wrapper {
+      @include test(red);
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .title-inner-wrapper {
+      @include test(red);
+    }
+
     .image-collage-wrapper {
       // height: 500px;
       order: 2
     }
 
+    .feature-img {
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 10%;
+      }
+    }
+
     .title-wrapper {
       order: 1;
-      position: relative;
-      z-index: -1;
 
       .title-inner-wrapper {
-        position: absolute;
-        width: 100%;;
-        z-index: 10;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         text-align: left;
-        // font-size: 2.3em;
-        line-height: 1.1;
-        padding-left: 3rem;
-        padding-right: 5rem;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        font-size: 1.75rem;
+        padding-top: 10%;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    .title-wrapper {
+
+      .title-inner-wrapper {
+        font-size: 2rem;
       }
     }
   }
 
   @include respond-to(medium) {
+    .title-wrapper {
+
+      .title-inner-wrapper {
+        // padding-left: 2em;
+        // padding-right: 2em;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @include respond-to(large) {
     position: relative;
     z-index: -1;
 
@@ -78,13 +123,27 @@ section.home-hero {
       bottom: 0;
       left: 5%;
       right: 5%;
-      height: 80px;
+      height: 50px;
       z-index: 2000;
       background-color: #fff;
     }
 
     .feature-img {
-      // height: 600px;
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 0;
+      }
+    }
+
+    .title-wrapper {
+
+      .title-inner-wrapper {
+        // padding-left: 2em;
+        // padding-right: 2em;
+        font-size: 2.75rem;
+        padding-top: 0;
+      }
     }
   }
 
