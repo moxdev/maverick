@@ -6,8 +6,9 @@
     padding: 0;
     margin: 0;
     background-color: $color__brand-2;
+    border-top: 2px solid $color__brand-2;
     position: absolute;
-    top: 200px;
+    top: 121px;
     width: 100vw;
     height: 100vh;
     z-index: 100;
@@ -19,6 +20,14 @@
     letter-spacing: 1px;
     // text-shadow: 0 0 1px rgba(0, 0, 0, 1);
     z-index: 99999;
+
+    @media only screen and (min-width: 333px) {
+      top: 100px;
+    }
+
+    @media only screen and (min-width: 400px) {
+      top: 105px;
+    }
 
     ul {
       clear: both;
@@ -34,7 +43,7 @@
     }
 
     li {
-      padding: 1em;
+      padding: 1em 2em;
       margin: 0;
       background-color: #fff;
 
@@ -49,13 +58,13 @@
 
     a {
       color: #111;
-      // font-family: $font__black;
+      font-family: $font__bold;
       text-transform: uppercase;
       text-decoration: none;
     }
 
     .icon-plus {
-      color: #fff;
+      color: $color__brand-2;
       font-size: 1.4em;
       float: right;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -63,7 +72,15 @@
     }
 
     .sub-menu {
+      margin: 0;
+      padding: 0 2em 0;
+      li {
+        padding: 1em;
 
+        &:first-child {
+          padding-top: 2em;
+        }
+      }
       a {
         text-transform: none;
       }
@@ -75,7 +92,7 @@
     }
   }
 
-  @include respond-to(small) {
+  @include respond-to(large) {
     display: none
   }
 }

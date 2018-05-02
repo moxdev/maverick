@@ -21,7 +21,7 @@
   @include max-width(900px);
 
   @include respond-to(large) {
-    @include max-width(1000px);
+    @include max-width(1200px);
   }
 }
 
