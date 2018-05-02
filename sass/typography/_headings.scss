@@ -21,6 +21,10 @@ h2 {
   margin-bottom: .125em;
   color: $color__brand-1;
 
+  @include respond-to(large) {
+    font-size: 1.875rem;
+  }
+
 }
 
 h3 {

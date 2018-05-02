@@ -31,7 +31,7 @@ module.exports = {
   ],
   "watchOptions": {},
   "server": false,
-  "proxy": 'http://maverick.test/',
+  "proxy": 'http://maverick-v2.test/',
   "port": 3000,
   "middleware": false,
   "serveStatic": [],
