@@ -50,9 +50,11 @@
     }
 
     .social{
+      // max-width: 200px;
 
       h2 {
         font-size: 1em;
+        color: $color__text-main;
       }
     }
 
@@ -62,11 +64,14 @@
       justify-content: center;
       align-items: center;
       padding: 0;
+      // @include test(red);
 
       li {
         margin-bottom: 0;
+        // @include test(green);
 
         a {
+          // @include test(blue);
           display: block;
           text-indent: 110%;
           white-space: nowrap;
@@ -84,23 +89,28 @@
       }
 
       .linked a {
-        background-position: -114px 0;
+        // background-position: -114px 0;
+        background-position: -118px 0;
       }
 
       .tw a {
-        background-position: -36px 0;
+        // background-position: -36px 0;
+        background-position: -40px 0;
       }
       .pin a {
         background-position: -189px 0;
       }
       .insta a {
-        background-position: -227px 0;
+        // background-position: -227px 0;
+        background-position: -235px 0;
       }
       .yt a {
-        background-position: -151px 0;
+        // background-position: -151px 0;
+        background-position: -157px 0;
       }
       .goo a {
-        background-position: -75px 0;
+        // background-position: -75px 0;
+        background-position: -78px 0;
       }
 
     }
@@ -119,8 +129,11 @@
       }
 
       .social-media {
-        float: right;
-        clear: left;
+        // margin-left: auto;
+        justify-content: flex-end;
+
+        // float: right;
+        // clear: left;
       }
 
       #footer-menu {
@@ -140,7 +153,7 @@
       }
       .social-media {
         li {
-          padding-right: 2em;
+          // padding-right: 2em;
         }
       }
     }

@@ -1,12 +1,12 @@
 #masthead {
-  
+
 
   #alt-navigation {
     background: $color__gradient;
   }
 
   .masthead-wrapper {
-    padding: 0 10px;
+    padding: 0 10px 5px;
     margin-top: -0.725rem;
     display: flex;
     justify-content: space-between;
@@ -93,14 +93,14 @@
   }
 
   @media screen and (min-width: 400px) {
-    
+
     .masthead-wrapper, #alt-navigation {
       padding: 0 20px;
 
       .site-branding {
 
         img {
-          width: 270px;
+          // width: 270px;
         }
       }
 
@@ -123,7 +123,7 @@
   }
 
   @include respond-to(large) {
-    
+
     .masthead-wrapper {
       margin-top: -1.125rem;
       // display: flex;
@@ -133,7 +133,7 @@
       .site-branding {
 
         img {
-          width: 300px;
+          width: 230px;
         }
       }
 
