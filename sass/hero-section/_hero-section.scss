@@ -22,7 +22,7 @@ section.hero {
     color: #fff;
     position: absolute;
     z-index: 2000;
-    font-size: 2em;
+    font-size: 2rem;
     padding: .5em 1em;
     letter-spacing: 1px;
     top: 36%;
@@ -30,6 +30,7 @@ section.hero {
     left: 0;
     text-align: left;
     line-height: 1.1;
+    width: 90%;
   }
 
   @include respond-to(x-small) {
@@ -44,6 +45,13 @@ section.hero {
     }
   }
 
+  @include respond-to(medium) {
+    .title-wrapper {
+      font-size: 2.2rem;
+    }
+
+  }
+
   @include respond-to(large) {
     z-index: -1;
 
@@ -53,7 +61,7 @@ section.hero {
       bottom: 0;
       left: 5%;
       right: 5%;
-      height: 50px;
+      height: 70px;
       z-index: 2000;
       background-color: #fff;
     }
@@ -64,12 +72,19 @@ section.hero {
 
     .title-wrapper {
       top: calc(50% - 1.7em);
+      font-size: 2.5rem;
     }
   }
 
+  @include respond-to(x-large) {
+    .title-wrapper {
+      font-size: 2.7rem;
+    }
+  }
   @include respond-to(xx-large) {
     .title-wrapper {
       width: 40%;
+      font-size: 2.9rem;
     }
 
     .feature-img {

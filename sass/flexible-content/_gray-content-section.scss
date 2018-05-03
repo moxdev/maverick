@@ -1,6 +1,11 @@
 section.gray-section {
   background-color: $color__background-body-alt;
 
+  a {
+    font-family: $font__bold;
+    text-decoration: none;
+  }
+
   h2 {
     color: $color__brand-1;
   }

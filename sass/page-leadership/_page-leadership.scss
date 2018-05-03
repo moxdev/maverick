@@ -38,17 +38,21 @@
     .team-bio-section-read-more {
 
       .read-more-btn {
-        text-decoration: underline;
+        // text-decoration: underline;
         padding-left: 5px;
-        color: $color__brand-3;
+        // color: $color__brand-3;
 
-        &:hover {
-          color: $color__brand-1;
-        }
+        // &:hover {
+        //   color: $color__brand-1;
+        // }
       }
 
       .read-more-btn.open {
         color: $color__brand-1;
+
+        &:hover {
+          color: $color__brand-2;
+        }
       }
 
       .read-more-dropdown {

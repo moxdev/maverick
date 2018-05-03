@@ -23,12 +23,25 @@
         border: none;
         border-radius: 10px;
         padding: 1em 1.5em;
-        width: 80%;
+        width: 50%;
         margin-top: 1.5rem;
       }
 
       .g-recaptcha {
         overflow: hidden;
+      }
+
+      .msg-box > div {
+        color: red;
+        text-align: left;
+
+        &:first-child {
+          margin-top: 2em;
+        }
+
+        &:last-child {
+          margin-bottom: 1em;
+        }
       }
 
       .disclaimer {
@@ -80,9 +93,9 @@
         max-width: 60%;
       }
 
-      form {
+      .mm4-short-form {
         input[type="submit"] {
-          width: 50%;
+          width: 200px;
         }
 
         .disclaimer {
