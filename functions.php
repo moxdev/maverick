@@ -42,6 +42,7 @@ if ( ! function_exists( 'maverick_setup' ) ) :
 		 */
     add_theme_support( 'post-thumbnails' );
     add_image_size('home-feature-img', 700, 700, true);
+    add_image_size('home-collage-img', 500, 300, true);
     add_image_size('feature-img', 1800, 600, true);
     add_image_size('featured-load-img', 600, 9999, false);
     add_image_size('team-bio-img', 300, 300, true);

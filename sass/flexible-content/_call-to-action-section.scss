@@ -32,12 +32,12 @@ section.cta-section {
 
   .cta-inner-wrapper {
     max-width: 240px;
-    text-shadow: 1px 0px 20px #fff, 0px 1px 20px #eee,
-    2px 1px 20px #fff, 1px 2px 20px #eee,
-    3px 2px 20px #fff, 2px 3px 20px #eee,
-    4px 3px 20px #fff, 3px 4px 20px #eee,
-    5px 4px 20px #fff, 4px 5px 20px #eee,
-    6px 5px 20px #fff, 5px 6px 20px #eee,
+    text-shadow: 1px 0px 20px #fff, 0px 1px 20px #fff,
+    2px 1px 20px #fff, 1px 2px 20px #fff,
+    3px 2px 20px #fff, 2px 3px 20px #fff,
+    4px 3px 20px #fff, 3px 4px 20px #fff,
+    5px 4px 20px #fff, 4px 5px 20px #fff,
+    6px 5px 20px #fff, 5px 6px 20px #fff,
     7px 6px 20px #fff;
 
     // text-shadow: 4px 4px 30px rgba(255, 255, 255, 1), 4px 4px 30px rgba(255, 255, 255, 1), 4px 4px 30px rgba(255, 255, 255, 1), 4px 4px 30px rgba(255, 255, 255, 1);
@@ -57,7 +57,19 @@ section.cta-section {
     }
 
     .cta-inner-wrapper {
-      max-width: 250px;
+      max-width: 275px;
+    }
+  }
+  @include respond-to(medium) {
+
+    .cta-inner-wrapper {
+      text-shadow: 1px 0px 30px #fff, 0px 1px 30px #fff,
+      2px 1px 30px #fff, 1px 2px 30px #fff,
+      3px 2px 30px #fff, 2px 3px 30px #fff,
+      4px 3px 30px #fff, 3px 4px 30px #fff,
+      5px 4px 30px #fff, 4px 5px 30px #fff,
+      6px 5px 30px #fff, 5px 6px 30px #fff,
+      7px 6px 30px #fff;
     }
   }
 
