@@ -70,7 +70,7 @@
     height: 100vh;
     opacity: 0;
     z-index: -1;
-    background-color: rgba(43, 51, 126, 0.97);
+    background-color: rgba(43, 51, 126, 0.96);
     padding: 2.5rem 2.5rem 5rem;
     color: $color__brand-3;
     font-size: 0.875em;
@@ -104,6 +104,8 @@
       // max-height: 30em;
       padding: 1.5rem;
       box-shadow: 0 0.3125em 1.5em rgba(0, 0, 0, 0.9);
+      max-width: 600px;
+      margin: 0 auto;
 
       .services-content {
         display: none;
@@ -119,6 +121,7 @@
 
           h2 {
             font-size: 2.5em;
+            margin-left: 1em;
           }
         }
 
@@ -129,6 +132,10 @@
 
       @include respond-to(small) {
         padding: 2.5rem;
+
+        .btn {
+          width: 200px;
+        }
       }
 
       @include respond-to(medium) {
@@ -136,6 +143,7 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin: 0;
       }
     }
 
@@ -149,9 +157,10 @@
       padding: 0.375em 0.625em;
       font-size: 1.5em;
       border: none;
+      transition: background-color .5s ease-out;
 
       &:hover {
-        background-color: lighten($color__brand-2, 5%);
+        background-color: lighten(#111, 5%);
         text-shadow: 0 0 .125em rgba(0, 0, 0, 0.75);
       }
     }

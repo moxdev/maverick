@@ -1,7 +1,7 @@
 .mm4-request-form {
   max-width: 600px;
 
-  input, textarea {
+  input, textarea, .dropdown {
     display: block;
     width: 100%;
     font-family: $font__reg;
@@ -10,6 +10,39 @@
     margin: 0 0 1.5em;
     padding: .8rem 1rem;
     line-height: 1;
+    color: $color__text-main;
+  }
+
+  .dropdown {
+    padding: .35rem 1em;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 25%;
+      right: 1.5rem;
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 6px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+
+    select{
+      background: transparent;
+      border: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      font-family: $font__reg;
+      padding: .3rem 1rem .3rem 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+    }
   }
 
   input[type="submit"] {
@@ -19,6 +52,7 @@
     padding: 1em 1.5em;
     width: 200px;
     margin-top: 1.5rem;
+    color: #fff;
   }
 
   .g-recaptcha {
@@ -30,17 +64,36 @@
     display: block;
   }
 
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color__text-main;
+  }
+  input::-moz-placeholder,
+  textarea::-moz-placeholder { /* Firefox 19+ */
+    color: $color__text-main;
+  }
+  input::-ms-input-placeholder,
+  textarea::-ms-input-placeholder { /* IE 10+ */
+    color: $color__text-main;
+  }
+  input::-moz-placeholder,
+  textarea::-moz-placeholder { /* Firefox 18- */
+    color: $color__text-main;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+
   @include respond-to(small) {
     max-width: 1000px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 
-    label {
+    label, select {
       flex: 1 1 45%;
       justify-content: space-between;
       padding: 0 1em;
-
     }
 
     textarea {

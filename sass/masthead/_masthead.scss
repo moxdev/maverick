@@ -124,12 +124,26 @@
       display: none;
     }
 
+    #alt-navigation {
+      @include padding-left-right;
+
+      li:last-child {
+        padding-right: 0px;
+      }
+    }
+
     .masthead-wrapper {
+      @include padding-left-right;
+
       .menu-primary-menu-container {
         display: block;
 
+        li {
+          padding: 1rem .5rem;
+        }
+
         li:last-child {
-          padding-right: 10px;
+          padding-right: 0px;
         }
       }
     }
@@ -139,8 +153,6 @@
 
     .masthead-wrapper {
       margin-top: -1.125rem;
-      // display: flex;
-      // justify-content: space-between;
       align-items: center;
 
       .site-branding {
@@ -152,6 +164,10 @@
 
       .menu-primary-menu-container {
         padding-top: 12px;
+
+        li {
+          padding: 1rem;
+        }
       }
     }
   }

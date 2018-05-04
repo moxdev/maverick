@@ -91,9 +91,13 @@ function maverick_custom_header_section() {
           <?php the_post_thumbnail('feature-img'); ?>
         </figure>
 
-        <div class="title-wrapper">
-          <div class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></div>
-        </div>
+        <?php if ( $hero_title ): ?>
+
+          <div class="title-wrapper">
+            <div class="hero-title"><?php echo wp_kses_post( $hero_title ); ?></div>
+          </div>
+
+        <?php endif; ?>
 
       <?php endif; ?>
 

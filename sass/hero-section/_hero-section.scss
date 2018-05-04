@@ -43,6 +43,10 @@ section.hero {
     .feature-img {
       height: 330px;
     }
+
+    .hero-title {
+      padding-left: 5%;
+    }
   }
 
   @include respond-to(medium) {

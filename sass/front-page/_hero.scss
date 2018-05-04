@@ -140,7 +140,6 @@ section.home-hero {
 
   @include respond-to(large) {
     position: relative;
-    z-index: -1;
 
     &:after {
       content: '';
@@ -163,8 +162,11 @@ section.home-hero {
 
     .title-wrapper {
       @include section-padding(6);
+      position: relative;
 
       .title-inner-wrapper {
+        position: relative;
+        z-index: 9999;
         font-size: 2.5rem;
         padding-top: 0;
         padding-left: 10%;

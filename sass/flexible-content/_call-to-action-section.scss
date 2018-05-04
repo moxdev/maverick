@@ -39,6 +39,7 @@ section.cta-section {
     5px 4px 20px #fff, 4px 5px 20px #fff,
     6px 5px 20px #fff, 5px 6px 20px #fff,
     7px 6px 20px #fff;
+    -webkit-transform: translateZ(0);
 
     // text-shadow: 4px 4px 30px rgba(255, 255, 255, 1), 4px 4px 30px rgba(255, 255, 255, 1), 4px 4px 30px rgba(255, 255, 255, 1), 4px 4px 30px rgba(255, 255, 255, 1);
     // text-shadow: 0px 10px 10px rgba(255, 255, 255, 1);
@@ -63,13 +64,14 @@ section.cta-section {
   @include respond-to(medium) {
 
     .cta-inner-wrapper {
-      text-shadow: 1px 0px 30px #fff, 0px 1px 30px #fff,
-      2px 1px 30px #fff, 1px 2px 30px #fff,
-      3px 2px 30px #fff, 2px 3px 30px #fff,
-      4px 3px 30px #fff, 3px 4px 30px #fff,
-      5px 4px 30px #fff, 4px 5px 30px #fff,
-      6px 5px 30px #fff, 5px 6px 30px #fff,
-      7px 6px 30px #fff;
+      // text-shadow: 1px 0px 30px #fff, 0px 1px 30px #fff,
+      // 2px 1px 30px #fff, 1px 2px 30px #fff,
+      // 3px 2px 30px #fff, 2px 3px 30px #fff,
+      // 4px 3px 30px #fff, 3px 4px 30px #fff,
+      // 5px 4px 30px #fff, 4px 5px 30px #fff,
+      // 6px 5px 30px #fff, 5px 6px 30px #fff,
+      // 7px 6px 30px #fff;
+      -webkit-transform: translateZ(0);
     }
   }
 
@@ -97,10 +99,3 @@ section.cta-section {
     height: 350px;
   }
 }
-
-
-
-// position: absolute;
-// left: 20%;
-// top: 50%;
-// transform: translate(-50%, -50%);

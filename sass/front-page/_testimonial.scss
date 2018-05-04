@@ -164,6 +164,9 @@
         // margin-left: 30px;
       }
     }
+    h2 {
+      font-size: 1.8125em;
+    }
   }
 
   @include respond-to(medium) {
@@ -235,6 +238,32 @@
     .testimonial-carousel {
       max-width: 800px;
       // margin: 0 auto;
+    }
+
+  }
+
+  @include respond-to(x-large) {
+    h2 {
+      padding-left: calc(10% - 1em);
+    }
+
+    .flickity-page-dots {
+      width: 70%;
+    }
+  }
+  @include respond-to(xx-large) {
+    h2 {
+      padding-left: calc(10% - 2em);
+    }
+  }
+
+  @media only screen and (min-width: 2200px) {
+    h2 {
+      padding-left: calc(10% - 4em);
+    }
+
+    .flickity-page-dots {
+      width: 80%;
     }
 
   }
