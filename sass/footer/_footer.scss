@@ -54,7 +54,7 @@
       }
     }
 
-    .social{
+    .social-wrapper {
       // max-width: 200px;
 
       h2 {
@@ -67,12 +67,10 @@
       list-style: none;
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding: 0;
-      // @include test(red);
+      // align-items: center;
+      margin: 0 0 1.5em;
 
       li {
-        margin-bottom: 0;
         // @include test(green);
 
         a {
@@ -81,43 +79,60 @@
           text-indent: 110%;
           white-space: nowrap;
           overflow: hidden;
-          width: 40px;
-          height: 40px;
+          width: 35px;
+          height: 35px;
           background-image: url(/wp-content/themes/maverick/imgs/sprite-social-media-icons.svg);
           background-size: auto 100%;
           background-repeat: no-repeat;
         }
       }
 
-      .fb a {
-        background-position: 0 0;
+      .fb {
+        a {
+          background-position: -4px 0;
+          width: 27px;
+        }
       }
 
-      .linked a {
-        // background-position: -114px 0;
-        background-position: -118px 0;
+      .tw {
+        a {
+          background-position: -34px 0;
+        }
       }
 
-      .tw a {
-        // background-position: -36px 0;
-        background-position: -40px 0;
-      }
-      .pin a {
-        background-position: -189px 0;
-      }
-      .insta a {
-        // background-position: -227px 0;
-        background-position: -235px 0;
-      }
-      .yt a {
-        // background-position: -151px 0;
-        background-position: -157px 0;
-      }
-      .goo a {
-        // background-position: -75px 0;
-        background-position: -78px 0;
+      .goo {
+        a {
+          background-position: -68px 0;
+          width: 40px;
+        }
       }
 
+      .linked {
+        a {
+          background-position: -108px 0;
+          width: 30px;
+        }
+      }
+
+      .yt {
+        a {
+          background-position: -140px 0;
+          width: 40px;
+        }
+      }
+
+      .pin {
+        a {
+          width: 27px;
+          background-position: -179px 0;
+        }
+      }
+
+      .insta {
+        a {
+          background-position: -210px 0;
+        }
+      }
     }
 
     @media only screen and (min-width: 800px) {
@@ -135,8 +150,9 @@
         padding-top: 2em;
       }
 
-      .social {
+      .social-wrapper {
         padding-top: 1em;
+        margin-right: -.5em;
       }
 
       .social-media {
@@ -173,16 +189,13 @@
         }
       }
 
-      .social {
+      .social-wrapper {
         display: flex;
+        justify-content: space-between;
       }
     }
 
     @include respond-to(x-large) {
-      .wrapper {
-        // max-width: 1500px;
-      }
-
       #footer-menu {
 
         li {

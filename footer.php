@@ -80,7 +80,7 @@
 
           if( $fb || $pin || $tw || $insta || $yt || $goo || $link ) : ?>
 
-          <div class="social ftr-flex-child">
+          <div class="social-wrapper">
 
             <?php if ( $social_header ): ?>
               <h2><?php echo wp_kses_post( $social_header ); ?></h2>
@@ -140,7 +140,7 @@
 
 		</div><!-- .site-info -->
   </footer><!-- #colophon -->
-  
+
   <nav id="mobile-navigation">
 
     <?php
@@ -152,7 +152,7 @@
     ?>
 
   </nav>
-  
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
