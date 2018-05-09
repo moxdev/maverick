@@ -838,6 +838,13 @@
 		"oAP": "\/sass\/.sass-cache\/833f92f65a886dd18c19cea46c18ad64b00fe860\/_posts-and-pages.scssc",
 		"oF": 0
 		},
+	"\/sass\/.sass-cache\/8a87fe6eaf17c4d2888406b5d93abb95108fb689\/_page-featured-loads.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/8a87fe6eaf17c4d2888406b5d93abb95108fb689\/_page-featured-loads.scssc",
+		"oF": 0
+		},
 	"\/sass\/.sass-cache\/8a9097098514fb6f56bf145b56e976c8134dc1c4\/_front-page.scssc": {
 		"cB": 0,
 		"ft": 8192,
@@ -969,6 +976,13 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/sass\/.sass-cache\/ac728ac06c852bb504595906a948587eb5c02292\/_widgets.scssc",
+		"oF": 0
+		},
+	"\/sass\/.sass-cache\/b54e5426a106a6de2dea006da854fccb73df80f2\/_page-contact.scssc": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/sass\/.sass-cache\/b54e5426a106a6de2dea006da854fccb73df80f2\/_page-contact.scssc",
 		"oF": 0
 		},
 	"\/sass\/.sass-cache\/bd293a7267cc9af05b7ebbaf4288e8089ca17ffd\/_hero-section.scssc": {
@@ -1306,19 +1320,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/contact\/_contact.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/contact\/_contact.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/sass\/elements\/_elements.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1354,19 +1355,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/elements\/_tables.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/featured-loads\/_featured-loads.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/featured-loads\/_featured-loads.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -1783,6 +1771,32 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/navigation\/_navigation.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-contact\/_page-contact.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-contact\/_page-contact.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/page-featured-loads\/_page-featured-loads.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/page-featured-loads\/_page-featured-loads.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

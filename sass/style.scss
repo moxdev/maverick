@@ -47,8 +47,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Masthead
 # Hero Section
 # Flexible Content Sections
+  ## White Content Section
+  ## Gray Content Section
+  ## Call To Action Section
 # Front Page
+  ## Hero
+  ## Main Content
+  ## Testimonial
+  ## Icon-Services
 # Featured Loads Page
+# Leadership Page
+# Services Page
+# Request Quote Page
+# Contact Page
 # Footer
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
@@ -147,7 +158,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Featured Loads Page
 --------------------------------------------------------------*/
-@import "featured-loads/featured-loads";
+@import "page-featured-loads/page-featured-loads";
 
 /*--------------------------------------------------------------
 # Leadership Page
@@ -167,7 +178,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/
-@import "contact/contact";
+@import "page-contact/page-contact";
 
 /*--------------------------------------------------------------
 # Footer

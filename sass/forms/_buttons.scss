@@ -41,6 +41,8 @@ input[type="reset"] {
 
   &:hover {
     transform: scale(1.1);
+    background: $color__brand-2;
+    // color: ;
   }
 
   &:hover,
