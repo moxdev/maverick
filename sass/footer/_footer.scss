@@ -45,12 +45,19 @@
 
       a {
         color: #000;
+        &:hover {
+          color: $color__brand-1;
+        }
       }
     }
 
     #footer-navigation {
       a {
         color: $color__brand-1;
+
+        &:hover {
+          color: $color__brand-2;
+        }
       }
     }
 

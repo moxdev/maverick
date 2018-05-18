@@ -339,16 +339,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/min\/glightbox.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/glightbox.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/js\/min\/home-testimonial-carousel.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -393,21 +383,21 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/min\/services-lightbox.min.js": {
+	"\/js\/min\/services-popup.min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/services-lightbox.min-min.js",
+		"oAP": "\/js\/min\/services-popup.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/min\/services-lightbox.min.js.map": {
+	"\/js\/min\/services-popup.min.js.map": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/js\/min\/services-lightbox.min.js.map",
+		"oAP": "\/js\/min\/services-popup.min.js.map",
 		"oF": 0
 		},
 	"\/js\/navigation.js": {
@@ -420,12 +410,12 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"\/js\/services-lightbox.js": {
+	"\/js\/services-popup.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/js\/min\/services-lightbox.min.js",
+		"oAP": "\/js\/min\/services-popup.min.js",
 		"oF": 2,
 		"sC": 3,
 		"tS": 1
@@ -540,13 +530,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/readme.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/readme.txt",
-		"oF": 0
 		},
 	"\/rtl.css": {
 		"aP": 1,
@@ -1693,19 +1676,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/sass\/modules\/_flickity.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sass\/modules\/_glightbox.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/sass\/modules\/_glightbox.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

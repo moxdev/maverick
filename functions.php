@@ -153,9 +153,7 @@ function maverick_scripts() {
   }
 
   if( is_page_template( 'page-services.php' ) ) {
-    wp_enqueue_script('glightbox', get_template_directory_uri() . '/js/min/glightbox.min.js', NULL, NULL, TRUE);
-
-    wp_enqueue_script('services-lightbox', get_template_directory_uri() . '/js/min/services-lightbox.min.js', array('glightbox'), NULL, TRUE);
+    wp_enqueue_script('services-lightbox', get_template_directory_uri() . '/js/min/services-popup.min.js', NULL, NULL, TRUE);
   }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -280,16 +278,6 @@ function my_mce_before_init_insert_formats( $init_array ) {
         'title' => 'Button', // Title to show in dropdown
         'inline' => 'a', // Element to add class to
         'classes' => 'btn' // CSS class to add
-      ),
-      array(
-        'title' => 'HR Line', // Title to show in dropdown
-        'block' => 'hr', // Element to add class to
-        'classes' => 'hr-wysiwig-divider' // CSS class to add
-      ),
-      array(
-        'title' => 'Thin Italic', // Title to show in dropdown
-        'inline' => 'span', // Element to add class to
-        'classes' => 'roboto-thin-italic-text' // CSS class to add
       ),
       array(
         'title' => 'Read More Text', // Title to show in dropdown

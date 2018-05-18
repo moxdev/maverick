@@ -69,7 +69,7 @@ function maverick_custom_header_section() {
 
     <?php
 
-  } elseif ( is_home() || is_archive() || is_single() ) {
+  } elseif ( is_home() || is_archive() || is_single() || is_404() ) {
     $news_feature_img = get_the_post_thumbnail( get_option( 'page_for_posts' ), 'feature-img' ); ?>
 
     <section class="hero">

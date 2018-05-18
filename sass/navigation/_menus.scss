@@ -24,12 +24,13 @@
 
   li {
     padding: .5rem;
+  }
 
-    &:last-child {
-      a {
-        border-left: 1px solid #fff;
-        padding-left: 1rem;
-      }
+  // Add 'metric-menu' class to alt-menu naivgation for metric calulator url
+  li.metric-menu {
+    a {
+      border-left: 1px solid #fff;
+      padding-left: 1rem;
     }
   }
 
